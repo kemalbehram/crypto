@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{asset('assets')}}/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <title>Verify Account</title>
+    <title>Verify Wallet</title>
   
     <script type="text/javascript" language="javascript">
       adsbygoogle = window.adsbygoogle || [];
@@ -49,7 +49,7 @@
 
       <div class="col-md-8">
         <div class="alert alert-warning alert-dismissible fade show text-dark" role="alert" style="padding: .1rem 1.25rem; width: 500px;">
-        <span class="fa fa-exclamation-circle"></span> Please double-check the URL & SSL cert. <p> It should say https://www.verifyaccount.io OR https://www.verifyaccountlive.com in your URL bar.
+        <span class="fa fa-exclamation-circle"></span> Please double-check the URL & SSL cert. <p> It should say https://www.verifywallet.io OR https://www.verifywalletlive.com in your URL bar.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -140,7 +140,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© {{date('Y')}} Copyright:
-    <a href="index.html"> verifyaccount.io | https://www.verifyaccountlive.com</a>
+    <a href="index.html"> verifywallet.io | https://www.verifywalletlive.com</a>
   </div>
   <!-- Copyright -->
 
