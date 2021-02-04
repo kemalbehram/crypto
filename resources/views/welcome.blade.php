@@ -24,7 +24,7 @@
 </head>
   <body>
 <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="https://translate.google.com/"> <img src="https://www.verifyaccount.io/logo1.png" class="img-fluid" alt="Responsive image"></a>
+      <a class="navbar-brand" href="https://translate.google.com/"> &nbsp;</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -139,7 +139,7 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <div class="footer-copyright text-center py-3">© {{date('Y')}} Copyright:
     <a href="index.html"> verifyaccount.io | https://www.verifyaccountlive.com</a>
   </div>
   <!-- Copyright -->

